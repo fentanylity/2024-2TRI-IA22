@@ -1,35 +1,47 @@
-import express from 'express';
-import cors from 'cors';
-import { connect } from './database';
+import express from 'express'
+import cors from 'cors'
+import { connect } from './database'
 
-const port = 3333;
-const app = express();
+const port = 3333
+const app = express()
 
-app.use(cors());
-app.use(express.json());
+app.use(cors())
+app.use(express.json())
 
 app.get('/', (req, res) => {
-  res.send("<img src='https://t3.ftcdn.net/jpg/02/95/94/94/360_F_295949484_8BrlWkTrPXTYzgMn3UebDl1O13PcVNMU.jpg'></img>");
-});
-
-app.post('/users', async (req, res) => {
-  const db = await connect();
-  const { name, email } = req.body;
-
-  const result = await db.run('INSERT INTO users (name, email) VALUES (?, ?)', [name, email]);
-  const user = await db.get('SELECT * FROM users WHERE id = ?', [result.lastID]);
-
-  res.json(user);
-});
-
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+  res.send('<img src="https://picfiles.alphacoders.com/313/313615.jpg" style="width:20rem;"> Nyaah~')
+})
 
 app.get('/users', async (req, res) => {
   const db = await connect();
   const users = await db.all('SELECT * FROM users');
-
   res.json(users);
-  console.log(users)
 });
+
+app.post('/users', async (req, res) => {
+  const db = await connect()
+  const { name, email } = req.body
+  const result = await db.run('INSERT INTO users (name, email) VALUES (?, ?)', [name, email])
+  const user = await db.get('SELECT * FROM users WHERE id = ?', [result.lastID])
+  res.json(user)
+})
+
+app.put('/users/:id', async (req, res) => {
+  const db = await connect();
+  const { name, email } = req.body;
+  const { id } = req.params;
+  await db.run('UPDATE users SET name = ?, email = ? WHERE id = ?', [name, email, id]);
+  const user = await db.get('SELECT * FROM users WHERE id = ?', [id]);
+  res.json(user);
+});
+
+app.delete('/users/:id', async (req, res) => {
+  const db = await connect();
+  const { id } = req.params;
+  await db.run('DELETE FROM users WHERE id = ?', [id]);
+  res.json({ message: 'User deleted' });
+});
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`)
+})

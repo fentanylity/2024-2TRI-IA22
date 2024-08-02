@@ -1,9 +1,11 @@
-import { open } from 'sqlite';
-import sqlite3 from 'sqlite3';
+import { open, Database } from 'sqlite'
+import sqlite3 from 'sqlite3'
 
-let instance: any | null = null;
+let instance: Database | null = null
+
 export async function connect() {
-  if (instance) return instance;
+  if (instance !== null) 
+    return instance
 
   const db = await open({
      filename: './src/database.sqlite',
@@ -11,14 +13,13 @@ export async function connect() {
    });
   
   await db.exec(`
-    DROP TABLE users;
     CREATE TABLE IF NOT EXISTS users (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT,
       email TEXT
     )
-    `);
-    instance = db;
+  `);
 
-  return db;
+  instance = db
+  return db
 }
