@@ -5,12 +5,15 @@ import { connect } from './database'
 const port = 3333
 const app = express()
 
+
 app.use(cors())
 app.use(express.json())
-
+app.use(express.static(__dirname + '/../public'))
+/*
 app.get('/', (req, res) => {
-  res.send('<img src="https://picfiles.alphacoders.com/313/313615.jpg" style="width:20rem;"> Nyaah~')
+  res.send('')
 })
+*/
 
 app.get('/users', async (req, res) => {
   const db = await connect();

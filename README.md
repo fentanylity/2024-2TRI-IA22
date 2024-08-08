@@ -6,7 +6,7 @@ Esse toturial vai seguir bem rápido e simples, para você consguir terminar ant
 Vamos criar um servidor usando `node.js` que rodara nossa aplicação web, bem simplão, não vamos entrar muito em detalhes sobre oquê faz, mas você saberá o minímo para funcionar na sua máquina 👍
 
 ## Secção I
- Crie uma pasta com qualquer nome e abra ela dentro do `vscode`, por algum motivo não se lembre, sempre poderá ir para a secção mais detlhada [**↪cliando aqui 😚**.](https://github.com/PakuPacu/2024-2TRI-IA22/blob/main/README.md#L11) 
+ Crie uma pasta com qualquer nome e abra ela dentro do `vscode`, por algum motivo não se lembre, sempre poderá ir para a secção mais detlhada [**↪cliando aqui 😚**.](README.md) 
 
 ## Arrego
 Útilize o navegador dos titúlos ao lado para ir direamente até a parte aonde você precisa de ajuda.
