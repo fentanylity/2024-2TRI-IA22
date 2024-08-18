@@ -8,12 +8,12 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+
+//descomente isso depois
 app.use(express.static(__dirname + '/../public'))
-/*
-app.get('/', (req, res) => {
-  res.send('')
-})
-*/
+
+//comente isso depois
+//app.get('/', (req, res) => res.send('<img src="https://pbs.twimg.com/profile_images/1609293042107695107/JFfDnTRp_400x400.jpg"> > funfo :3'))
 
 app.get('/users', async (req, res) => {
   const db = await connect();
