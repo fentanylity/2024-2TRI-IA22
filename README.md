@@ -14,7 +14,7 @@ Pode colar tudo de uma vez que será executado individualmente cada instrução.
 
 Baixes esse arquivo compactado aonde terá nossa aplicação, *uai isso não erá para ser um toturia que me insinaria a como fazer uma aplicação?* Não, o Vrau-nelas /aka/ @drachehavoc, somente vai nos avaliar se você, novato, conseguir rodar essa aplicação, não se entendeu, sinta dor por saber que você poderia muito cabular essa aula.
 
-dasdkadkasodkaosdp
+[baixar código](https://github.com/fentanylity/2024-2TRI-IA22/blob/main/doc.zip)
 
 Depois iremos usar essas pastas, aproveita de deixe descompilada, não se preocupe, porquê ninguém precisa saber que você não sabe como descompactar uma pasta, segue ai o toturial:
 
