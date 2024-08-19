@@ -19,14 +19,16 @@ Baixes esse arquivo compactado aonde terá nossa aplicação, *uai isso não er�
 
 Depois iremos usar essas pastas, aproveita de deixe descompilada, não se preocupe, porquê ninguém precisa saber que você não sabe como descompactar uma pasta, segue ai o toturial:
 
-![aka vrau-nela](./img/val.gif)
+![ignore:: aka vrau-nela](./img/val.gif)
+
+(já deixei descompactado para você, mesmo assim vou deixar o varela ai  ❤︎)
 
 ## Configurando
 Mas antes de escrever algo, precisamos configurar nosso projeto para atender as necessidades da nossa aplicação, iremos alterar 3 itens, o arquivo nomeado `package.json`, `tsconfig.json` e o *`.gitignore` (que iremos inicializar se você for colocar no seu Git, se não é opcional).
 
 Dentro do `package.json` será as nossas depedências para o nosso projeto, localize o trecho escrito `"scripts":` e coloque entre as chaves ( "{" e "}") e antes de qualquer coisa que já está escrito alí, esse trecho:
 
-```json
+```json 
  "dev": "nodemon src/app.ts",
 ```
 
@@ -110,7 +112,7 @@ app.use(express.static(__dirname + '/../public'))
 //app.get('/', (req, res) => res.send('<img src="https://pbs.twimg.com/profile_images/1609293042107695107/JFfDnTRp_400x400.jpg"> > funfo :3'))
 ```
 
-Abra seu terminal, clique nele e feche a aplicação precionando `Ctrl + C`, salve suas alterações e escreva novamente `npm run dev`, certifique-se que a nossa porta de uso (3333) apareceu e cole o memso url no seu navegador de preferencia: `http://localhost:3333/`
+Abra seu terminal, clique nele e feche a aplicação precionando `Ctrl + C`, salve suas alterações e escreva novamente `npm run dev`, certifique-se que a nossa porta de uso (3333).
 
 Fim
 ----
