@@ -5,9 +5,7 @@ Abra seu `Visual Studio Code` no seu computador, você tanto web ou nativamente,
 ```bash
 npm init -y
 npm install express cors sqlite3 sqlite
-npm install --save-dev typescript nodemon 
-npm install @types/express @types/cors
-npm install ts-node
+npm install --save-dev typescript nodemon ts-node @types/express @types/cors
 npx tsc --init
 ```
 
