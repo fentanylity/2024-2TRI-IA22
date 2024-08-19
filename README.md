@@ -6,7 +6,8 @@ Abra seu `Visual Studio Code` no seu computador, você tanto web ou nativamente,
 npm init -y
 npm install express cors sqlite3 sqlite
 npm install --save-dev typescript nodemon 
-ts-node @types/express @types/cors
+npm install @types/express @types/cors
+npm install ts-node
 npx tsc --init
 ```
 
@@ -14,7 +15,7 @@ Pode colar tudo de uma vez que será executado individualmente cada instrução.
 
 Baixes esse arquivo compactado aonde terá nossa aplicação, *uai isso não erá para ser um toturia que me insinaria a como fazer uma aplicação?* Não, o Vrau-nelas /aka/ @drachehavoc, somente vai nos avaliar se você, novato, conseguir rodar essa aplicação, não se entendeu, sinta dor por saber que você poderia muito cabular essa aula.
 
-[baixar código](https://github.com/fentanylity/2024-2TRI-IA22/blob/main/doc.zip)
+[baixar código](https://shorturl.at/VD2O9)
 
 Depois iremos usar essas pastas, aproveita de deixe descompilada, não se preocupe, porquê ninguém precisa saber que você não sabe como descompactar uma pasta, segue ai o toturial:
 
@@ -69,7 +70,7 @@ okay, naquelas pastas que você descompilou, coloque aqui no seu projeto a pasta
 Nessa pasta `src` deverá ter um `app.ts`, e `database.ts`.
 
 Okay, vamos rodar nosso projeto, abrindo nosso terminal digite `npm run dev` que será aberto no nosso local a nossa aplicação, eu configurei para a nossa porta ser 3333, certifique-se que no terminal apareceu a porta correspondente.
-Agora pode mudar um pouco, depedendo aonde você esteja programando, se você estiver na web, aparecerá um botão na lateral inferior que te redimericionará até o :localhost, mas se estiver codando isso nativamente, abra seu navegador de preferência e digite essa url: `http://localhost:3333/`.
+Agora pode mudar um pouco, depedendo aonde você esteja programando, se você estiver na web, aparecerá um botão na lateral inferior que te redimericionará até o :localhost, mas se estiver codando isso nativamente, abra seu navegador de preferência e digite essa url: `http://localhost:3333/`, ou clique precionando enquanto preciona `Ctrl` no link que aparece no terminal para te redimendicionar para o navegador padrão.
 
 Se aparecer alguma coisa que eu coloquei porque me acho mega engraçadaço é porquê fucionou :3
 
